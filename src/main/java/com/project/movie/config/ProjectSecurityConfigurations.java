@@ -56,7 +56,7 @@ public class ProjectSecurityConfigurations {
 			@Override
 			public void addCorsMappings(CorsRegistry registry) {
 				registry.addMapping("/**")
-						.allowedOrigins("http://localhost:3000") // Allow requests from your frontend
+						.allowedOrigins("http://localhost:3000","https://movie-ui-8b7a.onrender.com") // Allow requests from your frontend
 						.allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS"); // Allow these HTTP methods
 //						.allowedHeaders("*").allowCredentials(true); // Allow cookies and credentials
 			}
